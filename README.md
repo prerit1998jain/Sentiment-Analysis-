@@ -19,7 +19,7 @@
     occurrences of several words in the reviews and classify them being positive
     or negative. 
 
- ## BAG OF WORDS APPROACH
+ ## Bag of words approach.
  
     We are  considering the frequency of the important words as independent variables or we can say as factors         to predict a review being positive or not.
     • STEP 1: EXTRACTING THE WORD FREQUENCY FROM A CORPUS. 
@@ -42,7 +42,7 @@
   | TEST SET ACCURACY (BINARY CLASS CLASSIFICATION) 79.2% | 86.2% | 84.5% | 71% |85.2% |
 
 
-## OVERALL SCORE 
+## Overall Score for Credit Scoring
 
     We are using the proportion of positive reviews out of total reviews scaled to five as
     a score to the company which can be used as a metric for judging how the company manages
@@ -52,8 +52,8 @@
         | Overall_Score = 5*(pos) / (pos + neg) |
         |---------------------------------------|  
 	
-                      Pos →  No. of  reviews classified as positive.
-		      Neg →  No. of reviews classified as negative.
+     Pos →  No. of  reviews classified as positive
+     Neg →  No. of reviews classified as negative.
 
 
  | Company Name | Rating given using our model | Rating as given in website |
