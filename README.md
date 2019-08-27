@@ -4,27 +4,44 @@ This Repository consists of my codes for sentiment analysis from the internship 
 # Introduction
 
     Problem Statement : 
-    To  use different  machine learning algorithms for sentiment analysis  of reviews of companies given by their employees on     Glassdoor’s website and accordingly giving them scores. 
-    To Generate an overall score for the company which can be further used as an independent variable for credit scoring.
+    To  use different  machine learning algorithms for sentiment analysis of 
+    reviews of companies given by their employees on Glassdoor’s website and
+    accordingly giving them scores. 
+    To Generate an overall score for the company which can be further used as 
+    an independent variable for credit Scoring.
  
 # Machine Learning :
 	
-    A normal machine learning problem is like a machine, learning the underlying relationship between some variables using    features selected from a given dataset  and then implement that knowledge on new data to make predictions on the basis of its learning.So in our case what we want is ,our machine should understand using the training set the relation between the occurrences of several words in the reviews and classify them being positive or negative. And when a new review come it should be able to classify and predict it as positive or negative.
+    A normal machine learning problem is like a machine, learning the underlying
+    relationship between some variables using features selected from a given dataset
+    and then implement that knowledge on new data to make predictions on the basis 
+    of its learning.So in our case what we want is ,our machine should understand 
+    using the training set the relation between the occurrences of several words in 
+    the reviews and classify them being positive or negative. And when a new review 
+    come it should be able to classify and predict it as positive or negative.
 		
 
  # Working
-    We are  considering the frequency of the important words as independent variables or we can say as factors to predict  a review being positive or not.
-    So first it will learn from our training set that which words are there which are more frequent in positive reviews and  negative reviews . This knowledge would be used to predict and classify the new reviews as positive or negative.)
-    For eg. our training set has a lot of sentences which are classified as positive by us and have phrases like “great work life balance”, “good co workers”. So when a new review  comes and consist of words like “good” and “great”, it will be assigned as positive by our model.
+    We are  considering the frequency of the important words as independent variables 
+    or we can say as factors to predict a review being positive or not.
+    So first it will learn from our training set that which words are there which are 
+    more frequent in positive reviews and  negative reviews . This knowledge would be
+    used to predict and classify the new reviews as positive or negative.)
+    For eg. our training set has a lot of sentences which are classified as positive by
+    us and have phrases like “great work life balance”, “good co workers”. So when a new 
+    review  comes and consist of words like “good” and “great”, it will be assigned as 
+    positive by our model.
     
     Overall Score:
-    We are using the proportion of positive reviews out of total reviews scaled to five as a score to the company which can       be used as a metric for judging how the company manages its employees.
+    We are using the proportion of positive reviews out of total reviews scaled to five as
+    a score to the company which can be used as a metric for judging how the company manages
+    its employees.
 			
 	
-        |  Overall_Score = 5*(pos) / (pos + neg) |
+        | Overall_Score = 5*(pos) / (pos + neg) |
           
                       Pos →  No. of  reviews classified as positive.
-		                  Neg → No. of reviews classified as negative.
+		      Neg →  No. of reviews classified as negative.
 
 
 # Results
