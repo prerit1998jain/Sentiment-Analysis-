@@ -1,50 +1,38 @@
 # Sentiment-Analysis-
-This Repository consists of my codes for sentiment analysis from the internship at Rubix Data Sciences. 
 
-# Introduction
+## Introduction
 
     Problem Statement : 
-    To  use different  machine learning algorithms for sentiment analysis of 
+    • To  use different machine learning algorithms for **sentiment analysis** of 
     reviews of companies given by their employees on Glassdoor’s website and
     accordingly giving them scores. 
-    To Generate an overall score for the company which can be further used as 
+    • To Generate an overall score for the company which can be further used as 
     an independent variable for credit Scoring.
  
-# Machine Learning :
+## Machine Learning :
 	
-    A normal machine learning problem is like a machine, learning the underlying
+    • A normal machine learning problem is like a machine, learning the underlying
     relationship between some variables using features selected from a given dataset
     and then implement that knowledge on new data to make predictions on the basis 
-    of its learning.So in our case what we want is ,our machine should understand 
-    using the training set the relation between the occurrences of several words in 
-    the reviews and classify them being positive or negative. And when a new review 
-    come it should be able to classify and predict it as positive or negative.
-		
+    of its learning. 
+    • Machine should understand using the training set the relation between the 
+    occurrences of several words in the reviews and classify them being positive
+    or negative. 
 
- # Working
-    We are  considering the frequency of the important words as independent variables 
-    or we can say as factors to predict a review being positive or not.
-    So first it will learn from our training set that which words are there which are 
-    more frequent in positive reviews and  negative reviews . This knowledge would be
-    used to predict and classify the new reviews as positive or negative.)
-    For eg. our training set has a lot of sentences which are classified as positive by
-    us and have phrases like “great work life balance”, “good co workers”. So when a new 
-    review  comes and consist of words like “good” and “great”, it will be assigned as 
-    positive by our model.
-    
-    Overall Score:
-    We are using the proportion of positive reviews out of total reviews scaled to five as
-    a score to the company which can be used as a metric for judging how the company manages
-    its employees.
-			
-	
-        | Overall_Score = 5*(pos) / (pos + neg) |
-          
-                      Pos →  No. of  reviews classified as positive.
-		      Neg →  No. of reviews classified as negative.
+ ## BAG OF WORDS APPROACH
+ 
+    We are  considering the frequency of the important words as independent variables or we can say as factors         to predict a review being positive or not.
+    • STEP 1: EXTRACTING THE WORD FREQUENCY FROM A CORPUS. 
+    • STEP 2: DECREASE THE SPARSITY BY SELECTING IMPORTANT FEATURES USING FEATURE 
+              SELECTION TECHNIQUES.
+    • STEP 3: AFTER THIS STEP, WE HAVE TABULAR DATA WITH FEATURES AS DIFFERENT WORDS,
+              AND EACH DATASET ROW CONSISTING OF THE FREQUENCY OF THESE WORDS IN THE 
+	      RESPECTIVE DOCUMENT. NOW THE DATA IS READY FOR TRAINING TASK.
+    • STEP 4: DIVIDE THE DATASET INTO TRAINING, VALIDATION AND TEST SET.
+    • STEP 5: PERFORM TRAINING OF VARIOUS MACHINE LEARNING ALGORITHMS ON TRAINING SET, 
+              TUNE HYPERPARAMETERS ON VALIDATION SET, AND FINALLY TEST ON TEST SET.
 
-
-# Results
+## Results
 
   | ALGORITHMS | CART | RANDOM FOREST | SUPPORT VECTOR MACHINE | NAIVE BAYES | MULTINOMIAL LOGISTIC REGRESSION |
   | ---------- | ---- | --------------|------------------------| ------------|---------------------------------|
@@ -54,7 +42,19 @@ This Repository consists of my codes for sentiment analysis from the internship 
   | TEST SET ACCURACY (BINARY CLASS CLASSIFICATION) 79.2% | 86.2% | 84.5% | 71% |85.2% |
 
 
-# OVERALL SCORE OF SOME COMPANIES.
+## OVERALL SCORE 
+
+    We are using the proportion of positive reviews out of total reviews scaled to five as
+    a score to the company which can be used as a metric for judging how the company manages
+    its employees.
+			
+	
+        | Overall_Score = 5*(pos) / (pos + neg) |
+        |---------------------------------------|  
+	
+                      Pos →  No. of  reviews classified as positive.
+		      Neg →  No. of reviews classified as negative.
+
 
  | Company Name | Rating given using our model | Rating as given in website |
  | -------------| -----------------------------| ---------------------------| 
