@@ -54,6 +54,25 @@ This Repository consists of my codes for sentiment analysis from the internship 
   | TEST SET ACCURACY (BINARY CLASS CLASSIFICATION) 79.2% | 86.2% | 84.5% | 71% |85.2% |
 
 
+# OVERALL SCORE OF SOME COMPANIES.
+
+ | Company Name | Rating given using our model | Rating as given in website |
+ | -------------| -----------------------------| ---------------------------| 
+ | Onicra | 2.93 | 3.3 |
+ | Star India Pvt. Ltd | 4.17 | 4.2 |
+ | TCS | 3.93 | 4.0 |
+ | Paytm | 4.01 | 4.1 |
+ | Flipkart | 3.78 | 4.1 |
+ | Birla | 3.68 | 4.0 |
+ | Kotak Mahindra Bank | 3.6 | 3.9 |
+ | Express Scripts| 3.12 | 3.4 |
+ | Amazon | 4.24 | 3.8 |
+ | Facebook | 3.85 | 4.2 |
+ | Shapoorji Pallonji | 3.73 | 3.9
+ | Dish tv | 3.67 | 3.9 |
+
+
+
   
 
 
